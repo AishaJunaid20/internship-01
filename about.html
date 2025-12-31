@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Purple Chorus</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">Purple Chorus</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // JS for hamburger toggle
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+
+<!-- About Hero -->
+<section class="about-hero-simple">
+  <h1>About Purple Chorus</h1>
+  <p>
+    We create elegant and accessible tools that help adults
+    discover music in new and meaningful ways.
+  </p>
+</section>
+
+<!-- About Content -->
+<section class="about-content">
+  <div class="container about-layout">
+
+    <div class="about-block">
+      <h2>Who We Are</h2>
+      <p>
+        Purple Chorus is a creative technology company focused on
+        reimagining how people experience and discover music.
+        We combine open-source innovation with a simple,
+        business-ready interface.
+      </p>
+    </div>
+
+    <div class="about-block">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to make music discovery intuitive,
+        creative, and accessible — even offline.
+        We believe technology should empower creativity,
+        not complicate it.
+      </p>
+    </div>
+
+    <div class="about-block">
+      <h2>Our Values</h2>
+      <ul class="about-values">
+        <li>Creative freedom through technology</li>
+        <li>Elegant and minimal design</li>
+        <li>Open-source innovation</li>
+        <li>User-focused experience</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Team Overview -->
+<section class="about-team-clean">
+  <div class="container">
+    <h2>Our Team</h2>
+    <p class="team-intro">
+      We are a multidisciplinary team of designers,
+      developers, and music enthusiasts working together
+      to build meaningful digital experiences.
+    </p>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>Creative Direction</h3>
+        <p>Music experience and interaction design</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Technical Development</h3>
+        <p>Open-source systems and offline architecture</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Product Strategy</h3>
+        <p>User experience and platform growth</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="product.html">Explore Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 Purple Chorus. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

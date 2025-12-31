@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product | Purple Chorus</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">Purple Chorus</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // JS for hamburger toggle
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+
+<!-- Product Hero -->
+<section class="product-hero">
+  <h1>Our Product</h1>
+  <p>
+    A powerful offline-ready platform designed to help adults
+    explore and rediscover music creatively.
+  </p>
+</section>
+
+<!-- Product Details -->
+<section class="product-details">
+  <div class="container product-grid">
+
+    <div class="product-text">
+      <h2>What We Offer</h2>
+      <p>
+        Purple Chorus provides an innovative music discovery platform
+        that works even without an internet connection. Built using
+        open-source technologies, it empowers users to experiment,
+        explore, and enjoy music in a new way.
+      </p>
+
+      <ul class="product-features">
+        <li>Offline music exploration</li>
+        <li>Creative sound discovery tools</li>
+        <li>Simple and intuitive interface</li>
+        <li>Built with open-source technology</li>
+      </ul>
+    </div>
+
+    <div class="product-boxes">
+      <div class="product-box highlight">
+        <h3>Offline Ready</h3>
+        <p>Use the platform anytime without internet access.</p>
+      </div>
+
+      <div class="product-box highlight">
+        <h3>Creative Tools</h3>
+        <p>Explore new sounds with innovative techniques.</p>
+      </div>
+
+      <div class="product-box highlight">
+        <h3>User Friendly</h3>
+        <p>Designed for adults with simplicity and elegance.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="product-cta">
+  <h2>Stay Updated</h2>
+  <p>Subscribe to our newsletter to get product updates.</p>
+  <a href="index.html#newsletter" class="btn">Subscribe Now</a>
+</section>
+<!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="product.html">Explore Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 Purple Chorus. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

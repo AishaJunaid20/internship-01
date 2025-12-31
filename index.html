@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Chorus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">Purple Chorus</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // JS for hamburger toggle
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Music in a New Way</h1>
+      <p>Experience creativity and glamour while exploring new music offline.</p>
+      <div class="hero-buttons">
+        <a href="product.html" class="btn">Explore Products</a>
+        <a href="#newsletter" class="btn btn-outline">Subscribe Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Our Features</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <i class="fas fa-music"></i>
+          <h3>Offline Music</h3>
+          <p>Discover and enjoy music anytime without internet connection.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Creative Interface</h3>
+          <p>Elegant, user-friendly interface designed for adults.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-headphones"></i>
+          <h3>Personalized</h3>
+          <p>Get music recommendations tailored just for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Team -->
+  <section class="about">
+    <div class="container">
+      <h2>About the Team</h2>
+      <p>We are a passionate team committed to helping adults discover new music creatively and easily.</p>
+      <div class="features">
+        <div class="feature-box">
+          <h3>Creative Minds</h3>
+          <p>Our designers bring innovation to music exploration.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Tech Experts</h3>
+          <p>We build seamless offline interfaces and advanced features.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Music Enthusiasts</h3>
+          <p>We live and breathe music to enhance your experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Users Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p>"Purple Chorus completely changed how I explore music. Love it!"</p>
+          <h4>- Alice J.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"The offline feature is a lifesaver. Elegant and intuitive."</p>
+          <h4>- Mark T.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Highly recommend for music lovers who want a fresh experience."</p>
+          <h4>- Sophie L.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <h3>Subscribe to Our Newsletter</h3>
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter your email" required>
+        <button id="subscribeBtn"><i class="fas fa-bell"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="product.html">Explore Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 Purple Chorus. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('subscribeBtn');
+    btn.addEventListener('click', () => {
+      alert('Thanks for subscribing!');
+    });
+  </script>
+
+</body>
+
+
+</body>
+</html>
