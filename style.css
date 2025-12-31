@@ -671,7 +671,7 @@
 
 /* Team Section */
 .about-team-clean {
-  background-color: #f5f5f5;
+  background-color:#fff7f0 ;
   padding: 90px 20px;
   text-align: center;
 }
@@ -733,6 +733,8 @@
   justify-content: center;
   margin: 70px 0;
   flex-wrap: wrap;
+ 
+
 }
 
 .feature-box {
@@ -1047,5 +1049,78 @@
 @media (max-width: 768px) {
   .terms-box {
     padding: 35px 25px;
+  }
+}
+/* =====================================
+   MOBILE HORIZONTAL SCROLL FIX
+   (NO COLORS / NO FONTS CHANGED)
+===================================== */
+
+/* Prevent horizontal scroll globally */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure all sections stay inside screen */
+section,
+.hero,
+.features,
+.about,
+.newsletter,
+.testimonials,
+.footer,
+.product-details,
+.contact-section,
+.terms-content {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix cards & boxes overflow on mobile */
+@media (max-width: 768px) {
+
+  * {
+    max-width: 100%;
+  }
+
+  .feature-card,
+  .testimonial-card,
+  .team-cards .card,
+  .feature-box,
+  .product-box,
+  .role-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Fix grid overflow */
+  .about-layout,
+  .product-grid,
+  .contact-grid,
+  .team-roles {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Fix forms causing overflow */
+  input,
+  textarea,
+  button {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Newsletter input fix */
+  .subscribe-box,
+  .newsletter form {
+    width: 100%;
+  }
+}
+
+/* Extra safety for very small devices */
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
   }
 }
